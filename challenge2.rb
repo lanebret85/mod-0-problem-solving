@@ -9,3 +9,8 @@
 # 3. Within that .each method, call the .downcase method on each element and print the return value using a puts statement
 
 # Code:
+school_supplies = ["pEnCiL", "EraSeR", "NOTeboOk", "lAPtoP"]
+
+school_supplies.each do |item|
+    puts item.downcase
+end

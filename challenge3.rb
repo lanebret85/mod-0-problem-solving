@@ -6,6 +6,16 @@
 # Pseudocode:
 # 1. Create a variable and assign a string value to it.
 # 2. Create a custom method with one parameter that will take a string argument.
-# 3. Inside the method, call the .delete method on the string argument from the custom method. The .delete method takes one parameter, and I will enter the argument "s".
-# 4. Call the custom method on the variable that contains the string value.
+# 3. Inside the method, set the custom method argument equal to the value of calling the .delete method on the string argument from the custom method. The string "s" will serve as the argument for the .delete method called on the custom method argument.
+# 4. The last line (and the return value) of the custom method will be the new version of the original argument of the custom method.
+# 5. Call the custom method on the variable that contains the string value.
 
+# Code:
+state = "Mississippi"
+
+def remove_s(word)
+    word = word.delete("s")
+    word
+end
+
+puts remove_s(state)

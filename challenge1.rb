@@ -5,5 +5,13 @@
 
 # Pseudocode:
 # 1. Create an array that holds some number of elements of type string
-# 2. Call the .each method on the array that uses a conditional to print each string element only if that element has exactly 4 characters
+# 2. Call the .each method on the array that uses a conditional to call the .length method on each element and print out that element if it contains exactly 4 characters
 
+# Code:
+numbers = ["one", "two", "three", "four", "five"]
+
+numbers.each do |number|
+    if number.length == 4
+        puts number
+    end
+end
